@@ -10,6 +10,7 @@
 1932 night_and_day
 1935 cheek_to_cheek
 1940 ill_never_smile_again
+1942 white_christmas
 1945 rum_and_coca_cola
 1950 if_i_knew_you_were_comin_id_have_baked_a_cake
 1952 you_belong_to_me
@@ -23,4 +24,5 @@
 1982 lets_get_physical
 1985 careless_whisper
 1990 hold_on
+1992 save_the_best_for_last
 1995 waterfalls

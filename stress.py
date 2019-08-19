@@ -7,9 +7,9 @@ Modified by Joseph VanderStel; based on work by Adam Waller and Ivan Tan.
 import string
 
 
-CMU_FILENAME = 'data/cmudict.txt'
-FUNCTION_WORD_FILENAME = 'data/function_words.txt'
-NON_WORD_FILENAME = 'data/non_words.txt'
+CMU_FILENAME = 'dictionary/cmudict.txt'
+FUNCTION_WORD_FILENAME = 'dictionary/function_words.txt'
+NON_WORD_FILENAME = 'dictionary/non_words.txt'
 
 def read_word_file(filename):
     """
@@ -63,6 +63,7 @@ def modify_dict(dictionary):
         word = format_word(word)
         if word in dictionary and len(dictionary[word]) == 1:
             dictionary[word] = [0]
+
     for word in read_word_file(NON_WORD_FILENAME):
         dictionary[format_word(word)] = [3]
     return dictionary
@@ -70,7 +71,3 @@ def modify_dict(dictionary):
 
 dictionary = build_dict()
 dictionary = modify_dict(dictionary)
-
-for word, stress in dictionary.items():
-    if word == 'THE':
-        print word, stress

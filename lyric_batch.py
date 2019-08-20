@@ -29,11 +29,12 @@ def generate_note_list(file):
                 '3', '0',
                  TRANSCRIPTIONS_DIRECTORY + file
             ],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE)
+            stdout=subprocess.PIPE)
 
         output, _ = process.communicate()
         return output.split('\n')
+
+
 
 
 def generate_stress_list(file):
@@ -45,15 +46,9 @@ def generate_stress_list(file):
     stress_list = []
     lyric_list = []
     with open(LYRICS_DIRECTORY + file, 'rb') as lyric_file:
-        in_comment_block = False
-        for line in lyric_file: # skip comments
-            if '/*' in line:
-                in_comment_block = True
-            elif '*/' in line:
-                in_comment_block = False
-            elif not in_comment_block:
-                line = stress.format_word(line)
-                lyric_list.append(line.split())
+        for line in stress.skip_comment_generator(lyric_file): # skip comments
+            line = stress.format_word(line)
+            lyric_list.append(line.split())
 
     for word in list(itertools.chain.from_iterable(lyric_list)):
         try:

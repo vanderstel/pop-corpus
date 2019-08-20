@@ -8,8 +8,7 @@ import string
 
 
 CMU_FILENAME = 'dictionary/cmudict.txt'
-FUNCTION_WORD_FILENAME = 'dictionary/function_words.txt'
-NON_WORD_FILENAME = 'dictionary/non_words.txt'
+EXTENSION_FILENAME = 'dictionary/extension.txt'
 
 def read_word_file(filename):
     """
@@ -18,12 +17,32 @@ def read_word_file(filename):
     entries = []
     try:
         with open(filename, 'r') as file:
-            for entry in file.readlines():
-                if entry[0] != ';': # skip comments
-                    entries.append(entry.split())
+            for entry in skip_comment_generator(file):
+                entries.append(entry.split())
     except IOError:
         pass
     return entries
+
+
+def skip_comment_generator(file):
+    """
+    Returns a generator that skips the blank lines of a file,
+    as well as several types of comments:
+        - C-style:  /* */
+        - CMU dict: ;
+        - Corpus:   %
+    """
+    in_comment_block = False
+    for line in file:
+        if line[0] in ';%\n':
+            continue
+        elif '/*' in line:
+            if '*/' not in line:
+                in_comment_block = True
+        elif '*/' in line:
+            in_comment_block = False
+        elif not in_comment_block:
+            yield line
 
 
 def format_word(word):
@@ -32,8 +51,8 @@ def format_word(word):
     """
     return word \
         .rstrip() \
-        .translate(string.maketrans("",""), string.punctuation) \
-        .upper()
+        .upper() \
+        .translate(None, ',."')
 
 
 def build_dict():
@@ -43,7 +62,6 @@ def build_dict():
     """
     emphasis_dict = {}
     for entry in read_word_file(CMU_FILENAME):
-        word = entry[0].translate(string.maketrans("", ""), string.punctuation)
         emph_list = []
         for syl in entry[1:len(entry)]:
             try:
@@ -51,23 +69,19 @@ def build_dict():
                 emph_list.append(emphlevel)
             except ValueError:
                 continue
-        emphasis_dict[word] = emph_list
+        emphasis_dict[entry[0]] = emph_list
     return emphasis_dict
 
 
 def modify_dict(dictionary):
     """
-    Mutate the data structure passed in.
+    Override entries in the CMU dictionary, and add new ones.
+    (Mutate the data structure passed in.)
     """
-    for word in read_word_file(FUNCTION_WORD_FILENAME):
-        word = format_word(word)
-        if word in dictionary and len(dictionary[word]) == 1:
-            dictionary[word] = [0]
-
-    for word in read_word_file(NON_WORD_FILENAME):
-        dictionary[format_word(word)] = [3]
+    for entry in read_word_file(EXTENSION_FILENAME):
+        dictionary[format_word(entry[0])] = entry[1:]
     return dictionary
 
 
 dictionary = build_dict()
-dictionary = modify_dict(dictionary)
+modify_dict(dictionary)

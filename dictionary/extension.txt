@@ -1,0 +1,10 @@
+/*
+ * This document includes words that either extend the CMU dictionary, or
+ * override one of its preexisting entries.
+ */
+
+
+/* NON_WORDS */
+
+HOW-JA 1 0
+HIRED(1) 1

@@ -1,8 +1,9 @@
 """
-Runs all lyrics files within a directory through the CMU dictionary
-and returns output files of each.
+Combines lyric files from the lyrics/ directory with
+the matching transcription files from the transcriptions/ directory.
+generating a file in the output/ directory.
 
-Modified by Joseph VanderStel; based on work by Adam Waller.
+(Based on work by Adam Waller.)
 """
 
 import os
@@ -10,7 +11,8 @@ import csv
 import itertools
 import subprocess
 
-import stress
+import dictionary
+from utils import skip_comment_generator, format_word
 
 
 LYRICS_DIRECTORY = 'lyrics/'
@@ -35,8 +37,6 @@ def generate_note_list(file):
         return output.split('\n')
 
 
-
-
 def generate_stress_list(file):
     """
     Given a lyrics file, return a list of stress events in this format:
@@ -46,13 +46,13 @@ def generate_stress_list(file):
     stress_list = []
     lyric_list = []
     with open(LYRICS_DIRECTORY + file, 'rb') as lyric_file:
-        for line in stress.skip_comment_generator(lyric_file): # skip comments
-            line = stress.format_word(line)
+        for line in skip_comment_generator(lyric_file): # skip comments
+            line = format_word(line)
             lyric_list.append(line.split())
 
     for word in list(itertools.chain.from_iterable(lyric_list)):
         try:
-            emph_list = stress.dictionary[word]
+            emph_list = dictionary.lookup(word)
             for i in range(len(emph_list)):
                 stress_list.append((emph_list[i], word + '[{}]'.format(i + 1)))
         except KeyError:

@@ -4,7 +4,16 @@
  */
 
 
-/* NON_WORDS */
+/* NON WORDS */
 
 HOW-JA 1 0
+
+
+/* ALTERNATE PRONUNCIATIONS */
+
 HIRED(1) 1
+
+
+/* OTHER */
+
+GOOD-BYES 0 1

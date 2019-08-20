@@ -52,7 +52,7 @@ def format_word(word):
     return word \
         .rstrip() \
         .upper() \
-        .translate(None, ',."')
+        .translate(None, ',."!')
 
 
 def build_dict():

@@ -8,7 +8,7 @@ def skip_comment_generator(file):
     """
     in_comment_block = False
     for line in file:
-        if line[0] in ';%\n':
+        if line[0] in '";%\n':
             continue
         elif '/*' in line:
             if '*/' not in line:

@@ -1,0 +1,4 @@
+
+		[console_scripts]
+		popcorpus=cli.cli:cli
+	

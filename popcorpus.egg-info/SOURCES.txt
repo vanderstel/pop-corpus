@@ -1,9 +1,0 @@
-setup.py
-cli/__init__.py
-cli/cli.py
-popcorpus.egg-info/PKG-INFO
-popcorpus.egg-info/SOURCES.txt
-popcorpus.egg-info/dependency_links.txt
-popcorpus.egg-info/entry_points.txt
-popcorpus.egg-info/requires.txt
-popcorpus.egg-info/top_level.txt

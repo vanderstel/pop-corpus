@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-	name='popcorpus',
+	name='pop-corpus',
 	version='0.1',
 	packages=['cli'],
 	include_package_data=True,
@@ -10,7 +10,7 @@ setup(
 	],
 	entry_points='''
 		[console_scripts]
-		popcorpus=cli.cli:cli
+		pop-corpus=cli.cli:cli
 	''',
 	)
 # from here: https://stackoverflow.com/questions/2051192/what-is-a-python-egg

@@ -11,6 +11,7 @@ from utils import skip_comment_generator, format_word
 
 CMU_FILENAME = 'dictionary/cmudict.txt'
 EXTENSION_FILENAME = 'dictionary/extension.txt'
+FUNCTION_WORDS_FILENAME = 'dictionary/function_words.txt'
 
 def read_word_file(filename):
     """
@@ -33,6 +34,12 @@ def modify_dict(dictionary):
     """
     for entry in read_word_file(EXTENSION_FILENAME):
         dictionary[format_word(entry[0])] = entry[1:]
+
+    for entry in read_word_file(FUNCTION_WORDS_FILENAME):
+        if len(entry) == 1:
+            word = entry[0].upper()
+            if word in dictionary and len(dictionary[word]) == 1:
+                dictionary[word] = [0] # make all mono-syllabic function words unstressed
     return dictionary
 
 

@@ -4,7 +4,7 @@
 1907 school_days TODO
 1910 casey_jones
 1915 its_a_long_way_to_tipperary
-1917 over_there TODO
+1917 over_there
 1920 swanee
 1922 april_showers
 1925 ill_see_you_in_my_dreams
@@ -31,6 +31,6 @@
 1985 careless_whisper
 1987 walk_like_an_egyptian
 1990 hold_on
-1992 save_the_best_for_last TODO
+1992 save_the_best_for_last
 1995 waterfalls
 1997 candle_in_the_wind TODO

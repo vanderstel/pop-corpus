@@ -1,7 +1,7 @@
 1900 mandy_lee
 1902 bill_bailey_wont_you_please_come_home
 1905 the_preacher_and_the_bear
-1907 school_days TODO
+1907 school_days DELETE
 1910 casey_jones
 1915 its_a_long_way_to_tipperary
 1917 over_there

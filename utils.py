@@ -23,7 +23,8 @@ def format_word(word):
     """
     Remove spaces, line markers, punctuation and make uppercase.
     """
-    return word \
-        .rstrip() \
-        .upper() \
-        .translate(None, ',."!')
+    out_str = word.rstrip().upper()
+    unwanted_chars = ',."!'
+    for char in unwanted_chars:
+        out_str = out_str.replace(char, '')
+    return out_str

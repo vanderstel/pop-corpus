@@ -3,13 +3,12 @@
 % The song begins and ends in G major, but the vocal part is in Ab major
 % vocal entry at 1:20
 
-[Ab] [OCT=4]
+[Ab] [OCT=3]
 
-R*43 |
+R*47 |
 
 .. .. .. .5 |
 3 5 1 3 | 4 ~ . 3 | 44 3~ 2~ 1~ | b6 |
-% this line includes a quarter triplet
 .. ^53 ~5 3~ | 5 v6 | ... ^5~3 ~5~ 3~~ | v6~ ~~ ~~ .5 |
 3 5 1 3 | 4~ ~~ .. 33 | 44 3~ 2~ 1~ | b6 |
 .. ^53 ~5 3~ | 5 v6 | .. ^5~ 35 3~ | 1 ~ . 1 |

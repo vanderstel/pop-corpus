@@ -21,7 +21,7 @@ LYRICS_DIRECTORY = 'lyrics/'
 TRANSCRIPTIONS_DIRECTORY = 'transcriptions/'
 OUTPUT_DIRECTORY = 'output/'
 
-PERL_SCRIPT = 'cli/scripts/process-duration.pl'
+PERL_SCRIPT = 'cli/scripts/process-duration.pl'  # D.T.
 
 
 @click.command()

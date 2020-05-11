@@ -1,7 +1,7 @@
 todo
 staged
 onhold
-dt_transcriptions
 *.pyc
 notes.txt
 pop_corpus.egg-info
+.DS_Store

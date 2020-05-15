@@ -10,7 +10,7 @@ I am adding back in all 12/8 songs. These include:
 - [x] 1930 (Replacing with "Stein Song")
 - [x] 1955 (Replacing with "Rock Around The Clock")
 - [x] 1956 (Replacing with. "Heartbreak Hotel")
-- [ ] 1957 (Replacing with "All Shook Up")
+- [x] 1957 (Replacing with "All Shook Up")
 - [ ] 1977 (Replacing with "Tonight’s the Night (Gonna Be Alright)")
 - [ ] 1980 (Replacing with "Call Me")
 

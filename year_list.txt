@@ -54,7 +54,7 @@
 1953 you_you_you 
 1954 oh_my_papa 
 1955 rock_around_the_clock
-1956 heartbreak_hotel
+1956 the_wayward_wind
 1957 all_shook_up
 1958 all_i_have_to_do_is_dream 
 1959 battle_of_new_orleans 
@@ -75,7 +75,7 @@
 1974 the_way_we_were 
 1975 love_will_keep_us_together
 1976 silly_love_songs
-1977 tonights_the_night
+1977 i_just_want_to_be_your_everything
 1978 shadow_dancing 
 1979 my_sharona 
 1980 call_me

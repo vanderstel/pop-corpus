@@ -1,6 +1,7 @@
 % Another Brick In The Wall (1980)
 
-[D] [..b..bb] [OCT=4]
+% [D] [..b..bb] [OCT=4]
+  [D] [..b..bb] [OCT=3]
 
 R*4 |
 
@@ -22,4 +23,6 @@ R*4 |
 .... 3~33 ~~3~ 3~2~ | ...... 2~~2~~ 2~~~1~ ~~7~~~ | 1 . . . | . |
 .... 3~33 ~~3~ 3~2~ | ...... 2~~2~~ 2~~~1~ ~~7~~~ | 1 . . . | . |
 
-R*39 | % fade out
+% R*39 | % fade out
+  R*34 | 
+% ^ Maybe cut it off after 4 mm. of the final D harmony?

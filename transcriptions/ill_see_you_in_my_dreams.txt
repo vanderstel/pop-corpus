@@ -1,8 +1,8 @@
 % I'll See You In My Dreams (1925)
 
-% 1:35
+% Melody starts at 1:35
 
-[G] [OCT=4]
+[G] [OCT=3]
 
 R*83 | . . . 5 |
 

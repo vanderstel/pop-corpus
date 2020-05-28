@@ -1,6 +1,6 @@
 % Swanee (1920)
 
-[E] [..b...b] [OCT=4]
+[E] [..b...b] [OCT=3]
 
 % Hard to hear the meter at the beginning; sounds like 3/4!
 

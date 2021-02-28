@@ -43,9 +43,7 @@ for($s=$min_s; $s<=$max_s; $s++) {
     $difference = $avg2 - $avg1;
     $log_ratio = log($avg2 / $avg1);
     $dev_sum = $dev1 + $dev2;
-    printf("%.3f\n", $dev_sum);
-
-#    printf("%d: avg1 = %.3f; avg2 = %.3f; diff = %.3f, ratio = %.3f, log ratio = %.3f, dev1 = %.3f, dev2 = %.3f, dev sum = %.3f\n", $s, $avg1, $avg2, $difference, $avg2 / $avg1, $log_ratio, $dev1, $dev2, $dev_sum);
+    printf("%d: avg1 = %.3f; avg2 = %.3f; diff = %.3f, ratio = %.3f, log ratio = %.3f, dev1 = %.3f, dev2 = %.3f, dev sum = %.3f\n", $s, $avg1, $avg2, $difference, $avg2 / $avg1, $log_ratio, $dev1, $dev2, $dev_sum);
     if(abs($difference) > $best_abs_difference) {
 	$best_abs_difference = abs($difference);
 	$best_difference = $difference;

@@ -26,7 +26,7 @@ PERL_SCRIPT = 'cli/scripts/process-duration.pl'  # D.T.
 
 @click.command()
 def cli():
-    """ Generate corpus files. """
+    """ Generate corpus files. (TODO: update to Python 3.8)"""
     for file in os.listdir(LYRICS_DIRECTORY):
         if not file.endswith('.txt'):
             continue

@@ -60,7 +60,7 @@ def generate_note_list(file):
             stdout=subprocess.PIPE)
 
         output, _ = process.communicate()
-        return output.split('\n')
+        return output.decode('utf-8').split('\n')
 
 
 def generate_stress_list(file):
@@ -71,7 +71,7 @@ def generate_stress_list(file):
     """
     stress_list = []
     lyric_list = []
-    with open(LYRICS_DIRECTORY + file, 'rb') as lyric_file:
+    with open(LYRICS_DIRECTORY + file, 'r') as lyric_file:
         for line in skip_comment_generator(lyric_file): # skip comments
             line = format_word(line)
             lyric_list.append(line.split())

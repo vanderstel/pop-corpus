@@ -745,7 +745,8 @@ if($v == 3 && $numnotes > 0) {
 	if($skip_melismas == 1 && $melisma[$n] == -1) {
 	    next;
 	}
-	printf("%5.3f %5.3f %d %d\n", $notetime[$n], $noteoff[$n], $pitch[$n], $chrom[$n]);
+#	printf("%5.3f %5.3f %d %d\n", $notetime[$n], $noteoff[$n], $pitch[$n], $chrom[$n]);
+	printf("%5.4f %5.4f %d %d\n", $notetime[$n], $noteoff[$n], $pitch[$n], $chrom[$n]);
 	# Or to output the time signature at the beginning of each note statement:
 	# printf("%d %5.3f %d %d\n", $mtsint[int($notetime[$n])], $notetime[$n], $pitch[$n], $chrom[$n]);
 

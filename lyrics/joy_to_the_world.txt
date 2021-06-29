@@ -28,21 +28,23 @@ I said a straight shootin' son of a gun
 Joy to the world
 All the boys and girls
 Joy to the fishes in the deep blue sea
+Joy to you and me
+
+/* modulate up a step */
+
+Joy to the world
+All the boys and girls
+Joy to the world
+Joy to you and me
+
+/* modulate down a step */
+
+Joy to the world
+All the boys and girls
+Joy to the fishes in the deep blue sea
 Joy to you and me 
 
 Joy to the world
-All the boys and girls
-Joy to the fishes in the deep blue sea
-Joy to you and me
-
-Joy to the world
-All the boys and girls
-Joy to the world
-Joy to you and me
-
-Joy to the world
-All the boys and girls
-Joy to the fishes in the deep blue sea
 Joy to you and me
 
 Joy to the world

@@ -1,7 +1,7 @@
-<header style="text-align: center;">
+<div align="center">
     <h1>Pop Corpus</h1>
     <p>A corpus of the top Billboard songs from 1900–1999</p>
-</header>
+</div>
 
 This repository hosts a corpus of 100 songs of American popular music: the most popular song from each year of the 20th century. The corpus was originally developed to study the evolution of syncopation over time, but its usefulness extends to all music researchers and enthusiasts who wish to study the rich tradition of American popular music.
 
@@ -54,20 +54,20 @@ An "output" file is generated from the transcription and lyric files using a cus
 
 Each line contains six values:
 - The first value is the time point of the note’s onset relative to the beginning of
-the song. The measure is the basic unit, with decimals representing divisions of the measure. For example, "5.2500" means the second quarter-note beat of the fifth measure.
+the song. The measure is the basic unit, with decimals representing divisions of the measure. For example, `5.2500` means the second quarter-note beat of the fifth measure.
 - The second value is the duration of the note. Again, the measure is the unit, with decimals representing fractions of the measure.
 - The third value is the MIDI number of the note (following the usual convention of
 middle C = 60).
 - The fourth value is the note's chromatic scale degree integer (tonic=0; leading tone=11).
-- The fifth value is the lexical stress of the syllable, with "1" being stressed, and "0"
+- The fifth value is the lexical stress of the syllable, with `1` being stressed, and `0`
 being unstressed.
-- The sixth value is the syllable itself. For example, MIGHTY[2] refers to
+- The sixth value is the syllable itself. For example, `MIGHTY[2]` refers to
 the second syllable of the word "mighty."
 
 Syllabic stress values are calculated by mapping each syllable from the lyric file to one of three stress values according to the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">Carnegie Mellon University Pronouncing Dictionary</a>: 0 for unstressed syllables
 (*to*-ma-to), 1 for stressed syllables (to-*ma*-to), and 2 for syllables with secondary stress
 (to-ma-*to*). Following the convention of <a href="http://rockcorpus.midside.com/lyrics_stress.html">prior studies</a>, all monosyllabic function words (such as articles, pronouns, and
-prepositions) were assigned an unstressed syllable, and 2's were converted to 1's, i.e. treated as
+prepositions) are assigned an unstressed syllable, and 2's are converted to 1's, i.e. treated as
 stressed syllables.
 
 

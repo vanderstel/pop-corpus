@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+# Written by Davy Temperley
+
 while(<>) {
 
     chomp($_);

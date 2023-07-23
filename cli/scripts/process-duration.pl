@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 #
+# Written by Davy Temperley
+#
 # This script is identical to process-mel5.pl, except that 1) when "skip_melismas" is set to 1, it outputs (with verbosity = 3) only the first note in each
 # melisma, assuming melismas marked with parentheses in the input, and 2) it reads "~" as a note duration symbol (a note extending over a metrical unit), and
 # with verbosity = 3, it outputs a column of offtimes (as well as the usual ontime, pitch, and scale-degree).

@@ -1,1 +1,50 @@
-<h1>Test</h1>
+<div align="center">
+    <h1>Pop Corpus</h1>
+    <p>A corpus of the top Billboard songs from 1900-1999</p>
+</div>
+
+<p>This repository hosts a corpus of 100 songs of American popular music: the most popular song from each year of the 20th century. The corpus was originally developed to study the evolution of syncopation over time, but its usefulness extends to all music researchers and enthusiasts who wish to study the rich tradition of American popular music.</p>
+<p>Songs are encoded as complete vocal melodies using a modified version of a format used in the <a href="http://rockcorpus.midside.com/index.html">Rolling Stone Corpus</a>. Encodings are based on transcriptions from recordings rather than sheet music. There are three files associated with each song:</p>
+<h4 id="1-the-transcription-file-a-href-https-github-com-vanderstel-pop-corpus-tree-master-transcriptions-transcriptions-a-">1. The transcription file (<a href="https://github.com/vanderstel/pop-corpus/tree/master/transcriptions">/transcriptions</a>)</h4>
+<p>The scale degrees and rhythms of the melody are encoded using a format that enables rapid transcription of the song in near real time. Here are the opening measures of the transcription file for John McCormack&#39;s &quot;It&#39;s A Long
+    Way To Tipperary&quot; (1915):</p>
+<pre><code><span class="hljs-number">1.</span><span class="hljs-number">.3</span> <span class="hljs-number">2</span>~<span class="hljs-number">1</span>~ <span class="hljs-number">6</span>~<span class="hljs-number">5</span>~ <span class="hljs-number">3</span>~<span class="hljs-number">45</span> | ~~<span class="hljs-number">6</span>~ <span class="hljs-number">5</span>~<span class="hljs-number">3</span>~ <span class="hljs-number">5</span>~~~ .... |
+</code></pre><p><img width="100%" src="https://github.com/vanderstel/pop-corpus/blob/master/static/imgs/tipperary.png?raw=true" alt="John McCormack, &quot;It&#39;s A Long Way To Tipperary&quot; (1915)"></p>
+<p>This is almost identical to the format that is used in the Rolling Stone Corpus (<a href="http://rockcorpus.midside.com/melodic_transcriptions.html">click here for an overview</a>), with one exception: in the Rolling Stone Corpus, both continuations and rests are encoded with periods (<code>.</code>), but the present corpus differentiates continuations with a tilde (<code>~</code>). </p>
+<hr>
+<h4 id="2-the-lyric-file-a-href-https-github-com-vanderstel-pop-corpus-tree-master-lyrics-lyrics-a-">2. The lyric file (<a href="https://github.com/vanderstel/pop-corpus/tree/master/lyrics">/lyrics</a>)</h4>
+<p>The corpus includes lyrics for each song, which were crosschecked with multiple sources on the internet. Here are the lyrics of the above excerpt:</p>
+<pre><code>Up to mighty London came
+<span class="hljs-keyword">An</span> Irish <span class="hljs-keyword">man</span> <span class="hljs-keyword">one</span> <span class="hljs-built_in">day</span>
+</code></pre><h4 id="3-the-output-file-a-href-https-github-com-vanderstel-pop-corpus-tree-master-output-output-a-">3. The &quot;output&quot; file (<a href="https://github.com/vanderstel/pop-corpus/tree/master/output">/output</a>)</h4>
+<p>An &quot;output&quot; file is generated from the transcription and lyric files using a custom script, and is designed to be machine-readable. The output file represents each melody as a list of note statements. Here is the note list for the above excerpt:</p>
+<pre><code><span class="hljs-number">4.0000</span> <span class="hljs-number">4.0625</span> <span class="hljs-number">60</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> UP[<span class="hljs-number">1</span>]
+<span class="hljs-number">4.1875</span> <span class="hljs-number">4.2500</span> <span class="hljs-number">64</span> <span class="hljs-number">4</span> <span class="hljs-number">0</span> TO[<span class="hljs-number">1</span>]
+<span class="hljs-number">4.2500</span> <span class="hljs-number">4.3750</span> <span class="hljs-number">62</span> <span class="hljs-number">2</span> <span class="hljs-number">1</span> MIGHTY[<span class="hljs-number">1</span>]
+<span class="hljs-number">4.3750</span> <span class="hljs-number">4.5000</span> <span class="hljs-number">60</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> MIGHTY[<span class="hljs-number">2</span>]
+<span class="hljs-number">4.5000</span> <span class="hljs-number">4.6250</span> <span class="hljs-number">57</span> <span class="hljs-number">9</span> <span class="hljs-number">1</span> LONDON[<span class="hljs-number">1</span>]
+<span class="hljs-number">4.6250</span> <span class="hljs-number">4.7500</span> <span class="hljs-number">55</span> <span class="hljs-number">7</span> <span class="hljs-number">0</span> LONDON[<span class="hljs-number">2</span>]
+<span class="hljs-number">4.7500</span> <span class="hljs-number">4.8750</span> <span class="hljs-number">52</span> <span class="hljs-number">4</span> <span class="hljs-number">1</span> CAME[<span class="hljs-number">1</span>]
+<span class="hljs-number">4.8750</span> <span class="hljs-number">4.9375</span> <span class="hljs-number">53</span> <span class="hljs-number">5</span> <span class="hljs-number">0</span> AN[<span class="hljs-number">1</span>]
+<span class="hljs-number">4.9375</span> <span class="hljs-number">5.1250</span> <span class="hljs-number">55</span> <span class="hljs-number">7</span> <span class="hljs-number">1</span> IRISH[<span class="hljs-number">1</span>]
+<span class="hljs-number">5.1250</span> <span class="hljs-number">5.2500</span> <span class="hljs-number">57</span> <span class="hljs-number">9</span> <span class="hljs-number">0</span> IRISH[<span class="hljs-number">2</span>]
+<span class="hljs-number">5.2500</span> <span class="hljs-number">5.3750</span> <span class="hljs-number">55</span> <span class="hljs-number">7</span> <span class="hljs-number">1</span> MAN[<span class="hljs-number">1</span>]
+<span class="hljs-number">5.3750</span> <span class="hljs-number">5.5000</span> <span class="hljs-number">52</span> <span class="hljs-number">4</span> <span class="hljs-number">0</span> ONE[<span class="hljs-number">1</span>]
+</code></pre><p>Each line contains six values:</p>
+<ul>
+    <li>The first value is the time point of the note's onset relative to the beginning of
+        the song. The measure is the basic unit, with decimals representing divisions of the measure. For example, <code>5.2500</code> means the second quarter-note beat of the fifth measure.</li>
+    <li>The second value is the duration of the note. Again, the measure is the unit, with decimals representing fractions of the measure.</li>
+    <li>The third value is the MIDI number of the note (following the usual convention of
+        middle C = 60).</li>
+    <li>The fourth value is the note's chromatic scale degree integer (tonic=0; leading tone=11).</li>
+    <li>The fifth value is the lexical stress of the syllable, with <code>1</code> being stressed, and <code>0</code>
+        being unstressed.</li>
+    <li>The sixth value is the syllable itself. For example, <code>MIGHTY[2]</code> refers to
+        the second syllable of the word &quot;mighty.&quot;</li>
+</ul>
+<p>Syllabic stress values are calculated by mapping each syllable from the lyric file to one of three stress values according to the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">Carnegie Mellon University Pronouncing Dictionary</a>: 0 for unstressed syllables
+    (<em>to</em>-ma-to), 1 for stressed syllables (to-<em>ma</em>-to), and 2 for syllables with secondary stress
+    (to-ma-<em>to</em>). Following the convention of <a href="http://rockcorpus.midside.com/lyrics_stress.html">prior studies</a>, all monosyllabic function words (such as articles, pronouns, and
+    prepositions) are assigned an unstressed syllable, and 2&#39;s are converted to 1&#39;s, i.e. treated as
+    stressed syllables.</p>

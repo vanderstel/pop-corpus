@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Pop20c Corpus</h1>
-    <p>A corpus of the top Billboard songs from 1900–1999</p>
+    <p>A corpus of the most popular American songs from 1900 to 1999</p>
 </div>
 
 The *Pop20c Corpus* includes 100 songs of American popular music: the most popular song from each year of the 20th century. The songs from 1900 through 1954 were selected based on the charts from Joel Whitburn's book *A Century of Pop Music*; these charts in turn were based on other charts reflecting record sales as well as other media such as sheet music sales, radio play, and jukebox play. Songs from 1955 through 1999 were selected from the *Billboard Hot 100* chart.
@@ -9,7 +9,7 @@ The *Pop20c Corpus* was developed by <a href="https://www.josephvanderstel.com/"
 
 Songs are encoded as complete vocal melodies using a modified version of a format used in the <a href="http://rockcorpus.midside.com/index.html">*Rolling Stone Corpus*</a>. Encodings are based on transcriptions from recordings rather than sheet music.
 
-There are three files associated with each song. Below is a summary of each file, using the opening measures of John McCormack's “It's A Long Way To Tipperary” (1915) as an example:
+There are three files associated with each song. Below is a description of each file type, using the opening measures of John McCormack's “It's A Long Way To Tipperary” (1915) as an example:
 
 ![John McCormack, "It's A Long Way To Tipperary" (1915)](https://github.com/vanderstel/pop-corpus/blob/master/static/imgs/tipperary.png?raw=true)
 
@@ -66,7 +66,7 @@ A "note list" file is generated from the transcription and lyric files using a c
 Each line contains six values:
 - The first value is the time point of the note’s onset relative to the beginning of
 the song. The measure is the basic unit, with decimals representing divisions of the measure. For example, `5.2500` means the second quarter-note beat of the fifth measure.
-- The second value is the duration of the note. Again, the measure is the unit, with decimals representing fractions of the measure.
+- The second value is the offset of the note. Again, the measure is the unit, with decimals representing fractions of the measure.
 - The third value is the MIDI number of the note (following the usual convention of
 middle C = 60).
 - The fourth value is the note's chromatic scale degree integer (tonic=0; leading tone=11).

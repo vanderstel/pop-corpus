@@ -9,13 +9,13 @@
   <body>
     <div style="text-align: center">
         <h1>Pop20c Corpus</h1>
-        <p>A corpus of the top Billboard songs from 1900-1999</p>
+        <p>A corpus of the most popular American songs from 1900 to 1999</p>
     </div>
 
     <p>The <i>Pop20c Corpus</i> includes 100 songs of American popular music: the most popular song from each year of the 20th century. The songs from 1900 through 1954 were selected based on the charts from Joel Whitburn&apos;s book <i>A Century of Pop Music</i>; these charts in turn were based on other charts reflecting record sales as well as other media such as sheet music sales, radio play, and jukebox play. Songs from 1955 through 1999 were selected from the <i>Billboard Hot 100</i> chart.</p>
     <p>The <i>Pop20c Corpus</i> was developed by <a href="https://www.josephvanderstel.com/" target="_blank">Joseph VanderStel</a> (<a href="mailto:joe.vanderstel@gmail.com">joe.vanderstel@gmail.com</a>) and <a href="http://davidtemperley.com/" target="_blank">David Temperley</a> (<a href="mailto:dtemperley@esm.rochester.edu">dtemperley@esm.rochester.edu</a>). For more about our methodology, see our article &ldquo;The Evolution of Syncopation in Twentieth-Century American Popular Music&rdquo; in <i>Journal of New Music Research</i> (2022). (<a href="https://www.josephvanderstel.com/pdfs/vanderstel_temperley_2022.pdf" target="_blank">PDF</a>) We originally developed the corpus in connection with that study, but it may also be useful for other music researchers and enthusiasts who wish to study the rich tradition of American popular music.</p>
     <p>Songs are encoded as complete vocal melodies using a modified version of a format used in the <a href="http://rockcorpus.midside.com/index.html" target="_blank"><i>Rolling Stone Corpus</i></a>. Encodings are based on transcriptions from recordings rather than sheet music.</p>
-    <p>There are three files associated with each song. Below is a summary of each file, using the opening measures of John McCormack&apos;s &ldquo;It&apos;s A Long Way To Tipperary&rdquo; (1915) as an example:</p>
+    <p>There are three files associated with each song. Below is a description of each file type, using the opening measures of John McCormack&apos;s &ldquo;It&apos;s A Long Way To Tipperary&rdquo; (1915) as an example:</p>
     <p>
         <img
             style="max-width: 100%; width: 700px;"
@@ -62,7 +62,7 @@
     <ul>
         <li>The first value is the time point of the note's onset relative to the beginning of
             the song. The measure is the basic unit, with decimals representing divisions of the measure. For example, <code>5.2500</code> means the second quarter-note beat of the fifth measure.</li>
-        <li>The second value is the duration of the note. Again, the measure is the unit, with decimals representing fractions of the measure.</li>
+        <li>The second value is the offset of the note. Again, the measure is the unit, with decimals representing fractions of the measure.</li>
         <li>The third value is the MIDI number of the note (following the usual convention of
             middle C = 60).</li>
         <li>The fourth value is the note's chromatic scale degree integer (tonic=0; leading tone=11).</li>

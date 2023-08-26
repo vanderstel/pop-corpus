@@ -3,11 +3,11 @@
     <p>A corpus of the top Billboard songs from 1900–1999</p>
 </div>
 
-The Pop20c Corpus includes 100 songs of American popular music: the most popular song from each year of the 20th century. The songs from 1900 through 1954 were selected based on the charts from Joel Whitburn's book A Century of Pop Music; these charts in turn were based on other charts reflecting record sales as well as other media such as sheet music sales, radio play, and jukebox play. Songs from 1955 through 1999 were selected from the Billboard Hot 100 chart.
+The *Pop20c Corpus* includes 100 songs of American popular music: the most popular song from each year of the 20th century. The songs from 1900 through 1954 were selected based on the charts from Joel Whitburn's book *A Century of Pop Music*; these charts in turn were based on other charts reflecting record sales as well as other media such as sheet music sales, radio play, and jukebox play. Songs from 1955 through 1999 were selected from the *Billboard Hot 100* chart.
 
-The Pop20c Corpus was developed by <a href="https://www.josephvanderstel.com/" target="_blank">Joseph VanderStel</a> (joe.vanderstel@gmail.com) and <a href="http://davidtemperley.com/" target="_blank">David Temperley</a> (dtemperley@esm.rochester.edu). For more about our methodology, see our article “The Evolution of Syncopation in Twentieth-Century American Popular Music” in Journal of New Music Research (2022). (<a href="https://www.josephvanderstel.com/pdfs/vanderstel_temperley_2022.pdf" target="_blank">PDF</a>) We originally developed the corpus in connection with that study, but it may also be useful for other music researchers and enthusiasts who wish to study the rich tradition of American popular music.
+The *Pop20c Corpus* was developed by <a href="https://www.josephvanderstel.com/" target="_blank">Joseph VanderStel</a> (joe.vanderstel@gmail.com) and <a href="http://davidtemperley.com/" target="_blank">David Temperley</a> (dtemperley@esm.rochester.edu). For more about our methodology, see our article “The Evolution of Syncopation in Twentieth-Century American Popular Music” in *Journal of New Music Research* (2022). (<a href="https://www.josephvanderstel.com/pdfs/vanderstel_temperley_2022.pdf" target="_blank">PDF</a>) We originally developed the corpus in connection with that study, but it may also be useful for other music researchers and enthusiasts who wish to study the rich tradition of American popular music.
 
-Songs are encoded as complete vocal melodies using a modified version of a format used in the <a href="http://rockcorpus.midside.com/index.html">Rolling Stone Corpus</a>. Encodings are based on transcriptions from recordings rather than sheet music.
+Songs are encoded as complete vocal melodies using a modified version of a format used in the <a href="http://rockcorpus.midside.com/index.html">*Rolling Stone Corpus*</a>. Encodings are based on transcriptions from recordings rather than sheet music.
 
 There are three files associated with each song. Below is a summary of each file, using the opening measures of John McCormack's “It's A Long Way To Tipperary” (1915) as an example:
 
@@ -15,7 +15,7 @@ There are three files associated with each song. Below is a summary of each file
 
 ---
 
-#### 1. The transcription file (<a href="https://github.com/vanderstel/pop-corpus/tree/master/transcriptions_raw">/transcriptions</a>)
+#### 1. The transcription file (<a href="https://github.com/vanderstel/pop-corpus/tree/master/transcriptions_raw">/transcriptions_raw</a>)
 
 The scale degrees and rhythms of the melody are encoded using a format that enables rapid transcription of the song in near real time. Here are the opening measures of the transcription file for "It's A Long
 Way To Tipperary":
@@ -26,7 +26,7 @@ Way To Tipperary":
 ```
 
 
-This is almost identical to the format that is used in the Rolling Stone Corpus (<a href="http://rockcorpus.midside.com/melodic_transcriptions.html">click here for an overview</a>), with one exception: in the Rolling Stone Corpus, both continuations and rests are encoded with periods (`.`), but the present corpus differentiates continuations with a tilde (`~`). 
+This is almost identical to the format that is used in the *Rolling Stone Corpus* (<a href="http://rockcorpus.midside.com/melodic_transcriptions.html">click here for an overview</a>), with one exception: in the *Rolling Stone Corpus*, both continuations and rests are encoded with periods (`.`), but the present corpus differentiates continuations with a tilde (`~`). 
 
 ___
 
@@ -42,7 +42,7 @@ An Irish man one day
 
 ---
 
-#### 3. The "note list" file (<a href="https://github.com/vanderstel/pop-corpus/tree/master/transcriptions_notelist">/output</a>)
+#### 3. The "note list" file (<a href="https://github.com/vanderstel/pop-corpus/tree/master/transcriptions_notelist">/transcriptions_notelist</a>)
 
 A "note list" file is generated from the transcription and lyric files using a custom script, and is designed to be machine-readable. The output file represents each melody as a list of note statements. Here is the note list for the above excerpt:
 

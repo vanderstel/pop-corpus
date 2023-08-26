@@ -1,6 +1,6 @@
 """
 Combines lyric files from the lyrics/ directory with
-the matching transcription files from the transcriptions/ directory.
+the matching transcription files from the transcriptions_raw/ directory.
 generating a file in the output/ directory.
 
 (Based on work by Adam Waller.)
@@ -18,8 +18,8 @@ from utils import skip_comment_generator, format_word
 
 
 LYRICS_DIRECTORY = 'lyrics/'
-TRANSCRIPTIONS_DIRECTORY = 'transcriptions/'
-OUTPUT_DIRECTORY = 'output/'
+TRANSCRIPTIONS_DIRECTORY = 'transcriptions_raw/'
+OUTPUT_DIRECTORY = 'transcriptions_notelist/'
 
 PERL_SCRIPT = 'cli/scripts/process-duration.pl'  # D.T.
 

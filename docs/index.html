@@ -25,16 +25,17 @@
     </p>
     <hr>
     <h2>1. The transcription file</h2>
-    <p>(<a href="https://github.com/vanderstel/pop-corpus/tree/master/transcriptions_raw" target="_blank">View GitHub source</a>; <a href="/zips/transcriptions_raw.zip" download>download zip</a>)</p>
+    <p>(<a href="https://github.com/vanderstel/pop-corpus/tree/master/transcriptions_raw" target="_blank">View GitHub source</a>; <a href="/zips/transcriptions_raw.zip" download>download zipped folder with all 100 transcription files</a>)</p>
     <p>The scale degrees and rhythms of the melody are encoded using a format that enables rapid transcription of the song in near real time. Here are the opening measures of the transcription file for &ldquo;It&apos;s A Long Way To Tipperary&rdquo;:</p>
     <pre><code>
     <span>1.</span><span>.3</span> <span>2</span>~<span>1</span>~ <span>6</span>~<span>5</span>~ <span>3</span>~<span>45</span> | ~~<span>6</span>~ <span>5</span>~<span>3</span>~ <span>5</span>~~~ .... |
     </code></pre>
 
     <p>This is almost identical to the format that is used in the <i>Rolling Stone Corpus</i> (<a href="http://rockcorpus.midside.com/melodic_transcriptions.html" target="_blank">click here for an overview</a>), with one exception: in the <i>Rolling Stone Corpus</i>, both continuations and rests are encoded with periods (<code>.</code>), but the present corpus differentiates continuations with a tilde (<code>~</code>). </p>
+    <p>Melismas are encoded with parentheses around the notes of the melisma. This follows a convention established in an <a href="http://rockcorpus.midside.com/lyrics_stress.html" target="_blank">extension</a> of the original <i>Rolling Stone</i> format.</p>
     <hr>
     <h2>2. The lyric file</h2>
-    <p>(<a href="https://github.com/vanderstel/pop-corpus/tree/master/lyrics" target="_blank">View GitHub source</a>;  <a href="/zips/lyrics.zip" download>download zip</a>)</p>
+    <p>(<a href="https://github.com/vanderstel/pop-corpus/tree/master/lyrics" target="_blank">View GitHub source</a>;  <a href="/zips/lyrics.zip" download>download zipped folder with all 100 lyric files</a>)</p>
     <p>The corpus includes lyrics for each song, which were crosschecked with multiple sources on the internet. Here are the lyrics of the above excerpt:</p>
     <pre><code>
     Up to mighty London came
@@ -42,7 +43,7 @@
     </code></pre>
     <hr>
     <h2>3. The &ldquo;note list&rdquo; file</h2>
-    <p>(<a href="https://github.com/vanderstel/pop-corpus/tree/master/transcriptions_notelist" target="_blank">View GitHub source</a>;  <a href="/zips/transcriptions_notelist.zip" download>download zip</a>)</p>
+    <p>(<a href="https://github.com/vanderstel/pop-corpus/tree/master/transcriptions_notelist" target="_blank">View GitHub source</a>;  <a href="/zips/transcriptions_notelist.zip" download>download zipped folder with all 100 note list files</a>)</p>
     <p>A &ldquo;note list&rdquo; file is generated from the raw transcription and lyric files using a custom script, and is designed to be machine-readable. The output file represents each melody as a list of note statements. Here is the note list for the above excerpt:</p>
     <pre><code>
     <span>4.0000</span> <span>4.0625</span> <span>60</span> <span>0</span> <span>0</span> UP[<span>1</span>]
@@ -78,5 +79,6 @@
         prepositions) are assigned an unstressed syllable, and 2&apos;s are converted to 1&apos;s, i.e. treated as
         stressed syllables.
     </p>
+    <p>In order to create a one-to-one relationship between notes and syllables, note lists only include the first note of a melisma.</p>
   </body>
 </html>

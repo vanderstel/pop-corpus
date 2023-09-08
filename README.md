@@ -28,6 +28,8 @@ Way To Tipperary":
 
 This is almost identical to the format that is used in the *Rolling Stone Corpus* (<a href="http://rockcorpus.midside.com/melodic_transcriptions.html">click here for an overview</a>), with one exception: in the *Rolling Stone Corpus*, both continuations and rests are encoded with periods (`.`), but the present corpus differentiates continuations with a tilde (`~`). 
 
+Melismas are encoded with parentheses around the notes of the melisma. This follows a convention established in an <a href="http://rockcorpus.midside.com/lyrics_stress.html" target="_blank">extension</a> of the original *Rolling Stone* format.
+
 ___
 
 
@@ -81,6 +83,6 @@ Syllabic stress values are calculated by mapping each syllable from the lyric fi
 prepositions) are assigned an unstressed syllable, and 2's are converted to 1's, i.e. treated as
 stressed syllables.
 
-
+In order to create a one-to-one relationship between notes and syllables, note lists only include the first note of a melisma.
 
 

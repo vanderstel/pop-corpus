@@ -3,7 +3,7 @@
     <p>A corpus of the most popular American songs from 1900 to 1999</p>
 </div>
 
-The *Pop20c Corpus* includes 100 songs of American popular music: the most popular song from each year of the 20th century. The songs from 1900 through 1954 were selected based on the charts from Joel Whitburn's book *A Century of Pop Music*; these charts in turn were based on other charts reflecting record sales as well as other media such as sheet music sales, radio play, and jukebox play. Songs from 1955 through 1999 were selected from the *Billboard Hot 100* chart.
+The *Pop20c Corpus* includes 100 songs of American popular music: the most popular song from each year of the 20th century. The songs from 1900 through 1954 were selected based on the charts from Joel Whitburn's book *A Century of Pop Music*; these charts in turn were based on other charts reflecting record sales as well as other media such as sheet music sales, radio play, and jukebox play. Songs from 1955 through 1999 were selected from the *Billboard Hot 100* chart. <a href="https://www.josephvanderstel.com/pdfs/vanderstel_temperley_2022_appendix.pdf" target="_blank">Click here</a> to view a table that displays the year, title, and artist of every song in the corpus.
 
 The *Pop20c Corpus* was developed by <a href="https://www.josephvanderstel.com/" target="_blank">Joseph VanderStel</a> (joe.vanderstel@gmail.com) and <a href="http://davidtemperley.com/" target="_blank">David Temperley</a> (dtemperley@esm.rochester.edu). For more about our methodology, see our article “The Evolution of Syncopation in Twentieth-Century American Popular Music” in *Journal of New Music Research* (2022). (<a href="https://www.josephvanderstel.com/pdfs/vanderstel_temperley_2022.pdf" target="_blank">PDF</a>) We originally developed the corpus in connection with that study, but it may also be useful for other music researchers and enthusiasts who wish to study the rich tradition of American popular music.
 
@@ -66,8 +66,8 @@ A "note list" file is generated from the transcription and lyric files using a c
 ```
 
 Each line contains six values:
-- The first value is the time point of the note’s onset relative to the beginning of
-the song. The measure is the basic unit, with decimals representing divisions of the measure. For example, `5.2500` means the second quarter-note beat of the fifth measure.
+- The first value is a zero-based floating point number representing the time point of the note’s onset relative to the beginning of
+the song. The measure is the basic unit, with decimals representing divisions of the measure. For example, `5.2500` means the second quarter-note beat of the sixth measure.
 - The second value is the offset of the note. Again, the measure is the unit, with decimals representing fractions of the measure.
 - The third value is the MIDI number of the note (following the usual convention of
 middle C = 60).
